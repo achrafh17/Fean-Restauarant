@@ -1,0 +1,618 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+}
+
+.home-menu-about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#order-online {
+    width: 150px;
+    height: 40px;
+    background-color: #febf33;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#order-online:hover {
+    background-color: #fbae07;
+}
+
+#fean-logo {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#book-nav,
+#menu-nav,
+#about-nav,
+#home-nav {
+    cursor: pointer;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+#home-nav:hover,
+#menu-nav:hover,
+#about-nav:hover,
+#book-nav:hover {
+    color: #febf33;
+}
+
+#user-logo-nav,
+#cart-logo-nav,
+#search-logo-nav {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-logo-nav:hover,
+#cart-logo-nav:hover,
+#search-logo-nav:hover {
+    color: #febf33;
+}
+
+/* Home Section */
+#home-section {
+    background-image: url("Images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px 20px;
+}
+
+.home-section-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.home-section-content h1 {
+    color: white;
+    font-size: clamp(40px, 6vw, 60px);
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 20px;
+}
+
+.home-section-content h5 {
+    color: white;
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.home-section-content button {
+    width: 170px;
+    height: 40px;
+    background-color: #febf33;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-section-content button:hover {
+    background-color: #fbae07;
+}
+.button-caroussel-home {
+    position: absolute;
+    margin-top: 150px;
+
+}
+#caroussel-button-one {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+#caroussel-button-two {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+#caroussel-button-three {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+/* Menu Section */
+#menu-section {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.promotion {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.promotion-item {
+    background-color: #282c34;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.promotion-item:hover {
+    transform: translateY(-5px);
+}
+
+.promotion-image-container {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 4px solid #fbae07;
+}
+
+#promotion-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promotion-text {
+    flex: 1;
+}
+
+.promotion-item h1 {
+    font-family: "Dancing Script", cursive;
+    color: white;
+    font-size: clamp(20px, 3vw, 25px);
+    margin-bottom: 10px;
+}
+
+.promotion-item h2 {
+    font-family: "Dancing Script", cursive;
+    color: white;
+    font-size: clamp(25px, 4vw, 35px);
+    margin-bottom: 15px;
+}
+
+.promotion-item button {
+    width: 180px;
+    height: 50px;
+    background-color: #fbae07;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.promotion-item button:hover {
+    background-color: #febf33;
+}
+
+/* Menu Choices */
+#our-menu {
+    color: #282c34;
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(35px, 5vw, 50px);
+    text-align: center;
+    margin: 40px 0;
+}
+
+.menu-choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.menu-choices-items {
+    width: auto;
+    min-width: 80px;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #282c34;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-choices-items:hover {
+    background-color: #febf33;
+}
+
+/* The Menu Items */
+.the-menu {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.the-menu-items {
+    background-color: #282c34;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.the-menu-items:hover {
+    transform: translateY(-5px);
+   
+}
+
+.the-menu-items-image-container {
+    width: 100%;
+    height: 200px;
+    background-color: #f1f2f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#the-menu-items-image {
+    width: 170px;
+    transition: transform 0.3s ease;
+}
+
+.the-menu-items:hover #the-menu-items-image {
+    transform: scale(1.15);
+}
+
+.the-menu-items-text {
+    padding: 25px;
+}
+
+#the-menu-items-text-title {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#the-menu-items-text-description {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.the-menu-items-price-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+#the-menu-items-price {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#the-menu-items-chart-logo {
+    width: 40px;
+    height: 40px;
+    background-color: #fbae07;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#view-more {
+    width: 200px;
+    height: 50px;
+    background-color: #febf33;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    margin-left: 43vw;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+#the-menu-items-chart-logo:hover {
+    background-color: #febf33;
+}
+
+/* About Section */
+#about-us-section {
+    width: 100%;
+    padding: 70px 20px;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#about-image {
+    width: 25vw;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: center;
+}
+
+.about-text h1 {
+    color: white;
+    font-size: clamp(40px, 6vw, 60px);
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-text button {
+    width: 200px;
+    height: 50px;
+    background-color: #febf33;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-text button:hover {
+    background-color: #fbae07;
+}
+
+
+/*------------------------------------------------------------------*/
+#book-table {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28vh;
+  }
+ 
+/* Testimonials Section */
+#testemonials {
+    padding: 70px 20px;
+    background-color: #f5f5f5;
+    margin-top: 29vh;
+}
+
+#what-people-say {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(35px, 5vw, 45px);
+    color: #282c34;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.testimonials-item {
+    background-color: #282c34;
+    border-radius: 15px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.testimonials-item:hover {
+    transform: translateY(-5px);
+}
+
+.testimonials-item h5 {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonials-item h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.number-arctil {
+  width: 15px;
+  height: 15px;
+  background-color: #febf33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 8px;
+  color: #282c34;
+  margin-left: -8px;
+  margin-top: -9px;
+
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        font-size: 24px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .home-menu-about {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+    }
+
+    .home-menu-about.active {
+        transform: translateY(0);
+    }
+
+    #fean-logo {
+        font-size: 30px;
+    }
+
+    .logo-nav {
+        gap: 15px;
+    }
+
+    .promotion-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .testimonials-item {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-section-content {
+        text-align: center;
+    }
+
+    .promotion-item div button {
+        margin: 15px auto 0;
+    }
+
+    .menu-choices-items {
+        min-width: 70px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .the-menu {
+        padding: 0 10px;
+    }
+
+    .about-text {
+        padding: 0 10px;
+    }
+
+    #about-image {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
